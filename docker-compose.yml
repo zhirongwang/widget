@@ -1,0 +1,12 @@
+version: '1'
+services:
+  app:
+    image: node
+    container_name: widget_server
+    working_dir: /app # Set this to the volume mount path inside the container
+    volumes:
+      - .:/app # Mount the current directory to /app inside the container
+    ports:
+      - "3000:3000" # Expose front-end port
+    stdin_open: true # Keep stdin open for interactive mode
+    tty: true
