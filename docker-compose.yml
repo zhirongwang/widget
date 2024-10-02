@@ -1,7 +1,7 @@
 version: '1'
 services:
   app:
-    image: node
+    image: node:14
     container_name: widget_server
     working_dir: /app # Set this to the volume mount path inside the container
     volumes:

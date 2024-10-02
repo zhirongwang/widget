@@ -9,3 +9,11 @@ docker-compose up -d
 
 docker exec -it  widget_server /bin/sh
 
+npm install -g @vue/cli 
+
+
+cd widget 
+
+npm run serve -- --port 3000
+
+
